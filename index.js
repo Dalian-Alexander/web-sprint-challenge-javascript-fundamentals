@@ -17,6 +17,7 @@ myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
+//-   nestedFunction can access the variable internal, because first nestedFunction looks inside its own scope to find internal, however since internal isnt defined within nestedFunctions scope it then goes up a level to myFunction's scope where it locates internal and then defines the parameter of internal inside nestedFunction. Variables and functions can look up to find where they are defined and pass them down. However scope and closure dont work in the reverse.
 
 
 
@@ -28,7 +29,7 @@ myFunction();
     
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
-function summation(/*Your Code Here*/) {
+function summation(number) {
   /*Your Code Here*/
 
   }
