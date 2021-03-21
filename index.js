@@ -59,12 +59,18 @@ const zooAnimals = [
   Use animalNames to populate and return the displayNames array with only the animal name and scientific name of each animal. 
   displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
-
-  function animalNames(/*Your Code Here*/){
-    /*Your Code Here*/
-  }
   
-
+  
+  function animalNames(zooAnimals){
+    let displayNames = [];
+    zooAnimals.forEach(function (zooAnimals) {
+      // return console.log(animal_name)
+      displayNames.push(`name: ${zooAnimals.animal_name}, scientific: ${zooAnimals.scientific_name}`)
+      });
+      return displayNames
+  }
+  console.log(animalNames(zooAnimals))
+//  console.log(animalNames(zooAnimals))
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
   The zoo needs a list of all their animal's names converted to lower case. 
   Using lowerCaseNames use .map() to create a new array of strings with the animal's names in lowercase and return the new array. 
