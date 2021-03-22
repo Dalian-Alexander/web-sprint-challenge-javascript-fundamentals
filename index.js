@@ -111,6 +111,7 @@ const zooAnimals = [
     const totalPop = zooAnimals.reduce((accumulator, data) => {
       return accumulator + data.population;
     }, 0);
+    return totalPop
   }
   
   
